@@ -9,7 +9,7 @@
     @endif
     <x-article
         :title="$article['title']"
-        :description="Str::limit($article['description'], 30)" />
+        :description="$article['description']" />
     @endforeach
 </div>
 @endsection
