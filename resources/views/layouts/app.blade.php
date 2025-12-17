@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>@yield('title')</title>
     <link rel="icon" href="{{ asset('favicon.ico') }}">
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
 <body>
