@@ -4,9 +4,7 @@
 <h2>Bienvenue sur la page d’accueil</h2>
 <div>
     @foreach($articles as $article)
-    @if($loop->last)
-    @break
-    @endif
+
     <x-article
         :title="$article['title']"
         :description="$article['description']" />
