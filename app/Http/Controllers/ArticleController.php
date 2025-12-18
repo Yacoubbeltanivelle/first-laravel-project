@@ -9,7 +9,8 @@ class ArticleController extends Controller
 {
     public function show($id)
     {
-        return view('pages.article', ["id" => $id]);
+        $article = Article::find($id);
+        return view('pages.article', ["article" => $article]);
     }
 
     public function create()
